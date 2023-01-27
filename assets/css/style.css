@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: rgb(71, 71, 122);
+  color: rgb(255, 255, 255);
+  font-family: Roboto Condensed;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid rgb(55, 32, 32);
+}
+
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+
+}
+
+
+.form-control{
+display: block;
+width: 70%;
+padding: .375rem .75rem;
+}
+
+.past {
+  color: #f9db17;
+}
+
+.present {
+  color: #ff6961;
+}
+
+.future {
+  color: #193da0;
+}
+
+.btn{
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #ffffff;
+}
+
+.btn:hover{
+  background-color: rgb(59, 48, 112)
+}
+
