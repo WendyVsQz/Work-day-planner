@@ -1,19 +1,31 @@
+// calling targets:
+// 1. currentDate
+// 2. colorcode
+// 3. form control
+// 4. button
+//--------------------------
 // Current time
-var currentDate = date.getDate()
 
-console.log(currentDate);
+var timeDisplayEl = document.querySelector('#currentDate');
+var currentDate = document.querySelector('answer');
 
-// TimeBlocks
-var currentHour = Date.now().getHours();
-$('.colorcode').each(function(){
-    var val = parseInt($(this).prop('id'));
-    if(val > currentHour && val < currentHour+6){
-        $(this).css('background-color','#f9db17');
-    }else if(val < currentHour && val > currentHour-6){
-        $(this).css('background-color','#ff696');
-    }else if(val === currentHour){
-        $(this).css('background-color','#193da0');
-    }else{
-        $(this).css('background-color','#fff');
-    }
-});
+setInterval(function() {
+    timeDisplayEl.textContent = moment().format("dddd, MMMM Do YYYY, h:mm:ss a")
+},1000)
+currentDateEl.textContent = moment()
+
+// Time coloring
+
+
+
+// button function
+
+
+
+
+// clear selector
+
+
+
+
+// saving to local storage
