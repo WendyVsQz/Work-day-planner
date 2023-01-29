@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color:#494841;
+  background-color:#3e4647;
   color: #fff;
   font-size: 16px;
   line-height: 1;
@@ -19,7 +19,7 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: rgb(71, 71, 122);
+  background-color: rgb(24, 56, 77);
   color: rgb(255, 255, 255);
   font-family: Roboto Condensed;
   border-radius: 0;
@@ -39,6 +39,7 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid rgb(55, 32, 32);
+  background-color: #3e4647;
 }
 
 
@@ -46,7 +47,21 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+}
 
+.past {
+  background-color: #94a736;
+  color: #3e4647;
+}
+
+.present {
+  background-color: #ca231a;
+  color: #3e4647;
+}
+
+.future {
+  background-color: #471b81;
+  color: #3e4647;
 }
 
 
@@ -56,21 +71,6 @@ width: 70%;
 padding: .375rem .75rem;
 background-color: #3a3933;
 }
-
-#effect { width: 240px; height: 170px; padding: 0.4em; position: relative; background: #fff; }
-
-.past {
-  color: #f9db17;
-}
-
-.present {
-  color: #ff6961;
-}
-
-.future {
-  color: #193da0;
-}
-
 .btn{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -79,6 +79,6 @@ background-color: #3a3933;
 }
 
 .btn:hover{
-  background-color: rgb(59, 48, 112)
+  background-color: rgb(52, 151, 218);
 }
 
