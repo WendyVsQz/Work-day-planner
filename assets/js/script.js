@@ -15,12 +15,10 @@ setInterval(function() {
 
 // *Colorcode
 
-// time matching colors
-
 var currentTime = moment().format('H');
 console.log()
 
-// make background color of / past hours gray / current hour red / future hours green
+// make background color of past, current and future hours:
 const rows = document.getElementsByClassName("colorcode");
 var currentHour = parseInt(moment().format('H'));
 
@@ -33,8 +31,8 @@ Array.from(rows).forEach(row => {
     rowHour = parseInt(rowIdString);
     }
     if (rowHour) {
-      // Compares row id to current hour and sets color accordingly
-    if (currentHour === rowHour) {
+      // Compares row id to current hour and sets color accordingly:
+        if (currentHour === rowHour) {
         setColor(row, "#ca231a"); //present-red
         } else if ((currentHour < rowHour) && (currentHour > rowHour - 12)) {
         setColor(row, "#471b81"); //future-purple
@@ -50,12 +48,33 @@ function setColor(element, color) {
     element.style.backgroundColor = color;
 }
 
-// *button function
+// *Local storage
 
+$(document).ready(function () {
+    // saveBtn click listener 
+    $(".saveBtn").on("click", function () {
+        // Get nearby values of the description in JQuery
+        var text = $(this).siblings(".type").val();
+        var time = $(this).parent().attr("id");
+        
+        // Save text in local storage
+        localStorage.setItem(time, text);
+    })
+});
 
-// A function you call whenever the menu button is clicked
-
-
-
-// *saving to local storage
-
+  // save in local storage
+localStorage.setItem(timeKey, textValue);
+// Get item from local storage if any
+$('#hour8 .description').val(localStorage.getItem('hour8'));
+$('#hour9 .description').val(localStorage.getItem('hour9'));
+$('#hour10 .description').val(localStorage.getItem('hour10'));
+$('#hour11 .description').val(localStorage.getItem('hour11'));
+$('#hour12 .description').val(localStorage.getItem('hour12'));
+$('#hour13 .description').val(localStorage.getItem('hour13'));
+$('#hour14 .description').val(localStorage.getItem('hour14'));
+$('#hour15 .description').val(localStorage.getItem('hour15'));
+$('#hour16 .description').val(localStorage.getItem('hour16'));
+$('#hour17 .description').val(localStorage.getItem('hour17'));
+$('#hour17 .description').val(localStorage.getItem('hour18'));
+$('#hour17 .description').val(localStorage.getItem('hour19'));
+$('#hour17 .description').val(localStorage.getItem('hour20'));
